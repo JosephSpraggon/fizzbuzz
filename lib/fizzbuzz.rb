@@ -6,6 +6,8 @@ def fizzbuzz(number)
   elsif number % 5 == 0
     'buzz'
   elsif number.is_a?(String)
-    'thats not an integer'
+    "That's not an integer"
+  elsif number.is_a?(Float)
+    "That's not an integer"
   end
 end

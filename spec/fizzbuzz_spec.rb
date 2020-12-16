@@ -19,7 +19,13 @@ describe 'fizzbuzz' do
 end
 
 describe 'fizzbuzz' do
-  it 'return "that nots an integer" when passed a string' do
-    expect(fizzbuzz("")).to eq "thats not an integer"
+  it 'return "that is not an integer" when passed a string' do
+    expect(fizzbuzz("")).to eq "That's not an integer"
+  end
+end
+
+describe 'fizzbuzz' do
+  it 'return "that is not an integer" when passed a float' do
+    expect(fizzbuzz(1.1)).to eq "That's not an integer"
   end
 end
