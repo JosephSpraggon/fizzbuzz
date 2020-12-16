@@ -17,3 +17,9 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
 end
+
+describe 'fizzbuzz' do
+  it 'return "that nots an integer" when passed a string' do
+    expect(fizzbuzz("")).to eq "thats not an integer"
+  end
+end
